@@ -3,25 +3,26 @@
 using namespace std;
 
 int main() {
-    int choice;//create int choice, set as 0
+    int choice;
     cout << "Enter 1 for Fahrenheit, or another number for Celsius: ";
     cin >> choice;
     while (cin.fail()) { //while cin<=choice
         cin.clear();
-        cout << "";
+        string junk;
+        getline(cin, junk);
+        cout << "Reenter: ";
         cin >> choice;
-        //string junk;
-        //getline(cin, junk);
     }
 
-    int t;//create int t, set t to 0
+    int t;
     cout << "Enter your temperature: ";
     cin >> t;
     while (cin.fail()) {
         cin.clear();
+        string junk;
+        getline(cin, junk);
+        cout << "Reenter: ";
         cin >> t;
-        // string junk;
-        // getline(cin, junk);
     }
 
     Temperature myTemp;
