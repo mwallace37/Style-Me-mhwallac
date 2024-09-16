@@ -5,7 +5,7 @@ private:
     double F;  //degrees Fahrenheit
 public:
     /** default constructor for Temperature: sets F to 32
-     *
+     * sets F to 32
      */
     Temperature() : F(32) {}
 
